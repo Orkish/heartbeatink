@@ -1,0 +1,64 @@
+options:
+  formatter: stylish
+  cache-config: true
+  merge-default-rules: true
+rules:
+  # Style Guide
+  indentation:
+    - 2
+    -
+      size: tab
+  attribute-quotes:
+    - 2
+    -
+      include: true
+  brace-style:
+    - 2
+    -
+      allow-single-line: false
+  class-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+  declarations-before-nesting:
+    - 2
+    - true
+  empty-args:
+    - 2
+    -
+      include: true
+  empty-line-between-blocks:
+    - 2
+    -
+      allow-single-line-rulesets: false
+  function-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+  hex-length:
+    - 2
+    -
+      style: long
+  id-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+  mixin-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+  no-attribute-selectors: 2
+  no-combinators: 2
+  no-vendor-prefixes: 0
+  placeholder-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+  property-sort-order:
+    - 2
+    -
+      order: alphabetical
+  variable-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
