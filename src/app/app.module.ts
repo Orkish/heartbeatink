@@ -3,30 +3,33 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { AppRoutingModule } from './app-router.module';
+
 import { AppComponent } from './app.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { AboutComponent } from './components/about/about.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { ReservationsComponent } from './components/reservations/reservations.component';
-import { ReservationComponent } from './components/reservation/reservation.component';
+import { AboutComponent } from './pages/about/about.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ReservationComponent } from './pages/reservation/reservation.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [
     AppComponent,
-    AboutMeComponent,
     AboutComponent,
     GalleryComponent,
     ContactComponent,
-    ReservationsComponent,
-    ReservationComponent
+    ReservationComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
